@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input type="text" id="u" placeholder="enter username/email">
+            <input type="password" id="p" placeholder="enter password">
+            <button onclick="login()">Login</button>
+        </form>
+
+        <script>
+            function login(){
+                event.preventDefault();
+                var u=document.getElementById("u").value;
+                var p=document.getElementById("p").value;
+
+                if((u=="vishal" || u=="vishal@gmail.com") && p=="vishal"){
+                    console.log("login success");
+                }
+                else
+                {
+                    console.log("login failure!");
+                }
+
+
+            }
+        </script>
+
+    </body>
+</html>

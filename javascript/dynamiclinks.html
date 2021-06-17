@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="list">
+
+        </div>
+        <script>
+            var links=[
+                {
+                    name:"logout",
+                    url:"http://www.xyz.com/logout"
+                },
+                {
+                    name:"profile",
+                    url:"http://www.profile.com/logout"
+                },
+                {
+                    name:"fund transfer",
+                    url:"http://www.fund.com/logout"
+                },
+                {
+                    name:"checkbalance",
+                    url:"http://www.checkbalance.com/logout"
+                },
+                {
+                    name:"applyloan",
+                    url:"http://www.loancom/logout"
+                },
+                {
+                    name:"2wheelerloan",
+                    url:"http://www.loancom/logout"
+                },
+                
+
+            ]
+
+            var index=0;
+            var list=document.getElementById("list");
+            while(index < links.length){
+                var object=links[index];
+               var str= object.name.link(object.url)+"&nbsp&nbsp";
+                list.innerHTML+=str;
+                index++;
+            }
+        </script>
+    </body>
+</html>
+    

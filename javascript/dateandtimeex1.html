@@ -1,0 +1,62 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        Enter Date: <br><br>
+        <input type="text" id="year" maxlength="4" size="4" placeholder="year">&nbsp; : &nbsp;
+        <input type="text" id="month" maxlength="2" size="2" placeholder="mn">&nbsp; : &nbsp;
+        <input type="text" id="day" maxlength="2" size="2" placeholder="dy">&nbsp; : &nbsp;
+        <input type="text" id="hour" maxlength="2" size="2" placeholder="hr">&nbsp; : &nbsp;
+        <input type="text" id="minute" maxlength="2" size="2" placeholder="mm">&nbsp; : &nbsp;
+        <input type="text" id="second" maxlength="2" size="2" placeholder="ss"><br><br>
+        <button type="submit" onclick="getMsg()">Post Msg</button>&nbsp;
+        <span id='msg'></span>
+
+        <script>
+
+              function getMsg() {
+                  var msg='';
+                  var date=new Date();
+                  var customdate= getCustomDate();
+                  if(customdate < date){
+                      var diffTime = date - customdate;
+                      var seconds = Math.floor(diffTime / 1000);
+                      var minutes = Math.floor(seconds / 60);
+                      var hours = Math.floor(minutes / 60);
+                      var days = Math.floor(hours / 24);
+                      var months = Math.floor(days / 30);
+                      var years = Math.floor(months / 12);
+                      if(seconds <= 60){
+                          msg="Msg created just now";
+                      } else if (minutes < 60){
+                          msg=minutes > 1 ? "Msg created" + minutes + " mins ago." : "Msg created" + minutes + " 1 mins ago."; 
+                          msg = hours > 1 ? "Msg created" +  hours + " hrs ago." : "Msg created" + hours + " 1 hours ago."; 
+                        } else if( days <=30){
+                            msg = days > 1 ? "Msg created" + days + " days ago." : "Msg created" + days + " 1 days ago."; 
+                        } else if ( months < 12){
+                            msg = months > 1 ? "Msg created" + months + " months ago." : "Msg created" + months + " 1 months ago."; 
+                        } else {
+                            msg = years > 1 ? "Msg created" + years + " years ago." :  "Msg created" + years + " 1 years ago.;" 
+                        }
+                        document.getElementById('msg').innerHTML = msg;
+                    }
+                       function getCustomDate() {
+                           var year = document.getElementById('year').value;
+                           var month = document.getElementById('month').value;
+                           var day = document.getElementById('day').value;
+                           var hours = document.getElementById('hour').value;
+                           var minutes = document.getElementById('minute').value;
+                           var seconds = document.getElementById('second').value;
+                           return new Date(year,month,day,hours,minutes,seconds); 
+                      }
+                  
+                    }
+
+
+        </script>
+        
+        </body>
+    </html>

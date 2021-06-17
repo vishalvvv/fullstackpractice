@@ -1,0 +1,61 @@
+<html>
+    <head>
+
+        <style>
+
+            td{
+                text-align: center
+            }
+
+        </style>
+
+         </head>
+
+    <body>
+
+        <form id="categoryForm">
+
+        Name:<input type="text" id="name" placeholder="name here" size="100"> <br><br>
+        color:<input  type="color" id="color"> <br><br>
+
+
+        icon <input type="text"  id="icon" placeholder="Paste the icon url" size="100"> <br><br>
+
+        image <input type="text" id="image" placeholder="image url here" size="100"> <br><br>
+
+        <button id="addCategoryBtn" onclick="addCategory()">Add category</button>
+
+          <button id="saveBtn" onclick="save()">Save</button>  
+
+        </form>
+
+        <hr>
+
+        <table border="1">
+
+            <thead>
+
+                <tr>
+
+                    <th>category name</th>
+                    <th>category color</th>
+                    <th>category icon</th>
+                    <th colspan="2">Operation</th>    
+
+                </tr>
+    
+            </thead>
+
+            <tbody id="tbody">
+
+
+
+            </tbody>
+          
+        </table>
+
+        <script src="categories.js"></script>
+
+
+    </body>
+</html>

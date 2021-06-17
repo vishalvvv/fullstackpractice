@@ -1,0 +1,23 @@
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+          <form>
+
+          Enter Username:<input type="text" id="username" placeholder="username here"> <br><br>
+           Enter Password:<input onkeyup="validatePassword()" type="password" id="password" placeholder="password here"><span id="pattern"></span> <br><br>
+           Confirm Password:<input type="password" onkeyup="confirmPassword()" id="cpassword" placeholder="confirmPassword here"> <span id="msg"></span> <br><br>
+          Enter EmailId: <input type="text" id="email" placeholder="email here"> <br><br>
+
+          <button onclick="register()">Register</button>
+
+        </form>
+
+        <script src="register.js"> </script>
+
+    </body>
+</html>

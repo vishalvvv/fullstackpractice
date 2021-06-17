@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <select onchange="updateResult()" id="choice">
+            <option value="macos">Macos</option>
+            <option value="windows">windows</option>
+            <option value="linux">linux</option>
+            <option value="centos">centos</option>
+            
+        </select>
+
+        <h1 id="msg"></h1>
+
+        <script>
+            updateResult();
+            function updateResult(){
+                var choice=document.getElementById("choice").value;
+                switch(choice){
+                    case "macos": document.getElementById("msg").innerHTML="you chose Macos";break;
+                    case "windows": document.getElementById("msg").innerHTML="you chose windows";break;
+                    case "linux": document.getElementById("msg").innerHTML="you chose linux";break;
+                    case "centos": document.getElementById("msg").innerHTML="you chose centos";break;
+
+                }
+            }
+        </script>
+    </body>
+</html>

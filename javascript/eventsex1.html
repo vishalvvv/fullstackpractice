@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        Account Number:<input oncopy="return copy()" onpaste="return paste()" type="number" id="accountNumber"> <span id="message"></span>
+
+        <!----->
+        1234
+        function paste(){ 
+            document.getElementById("message").innerHTML="you cannot paste!!"; 
+            return false; }
+
+        <!----->
+
+        <script>
+                  function paste(){
+                      document.getElementById("message").innerHTML="you cannot paste!!";
+                      return false;
+                  }
+
+                  function copy(){
+                      document.getElementById("message").innerHTML="you cannot copy!!";
+                      return false;
+                  }
+
+        </script>
+    </body>
+</html>

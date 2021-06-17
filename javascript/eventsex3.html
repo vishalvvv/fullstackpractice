@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="btn">Show Greetings</button>
+        <button onclick="removeEvent()">removeEvent</button>
+
+        <script>
+            var btn=document.getElementById("btn");
+              function first(){
+                  alert("first");
+              }
+              function second(){
+                  alert("second")
+              }
+              btn.addEventListener('click',first);
+              btn.addEventListener('click',second);
+              function removeEvent(){
+                  btn.removeEventListener('click',first);
+              }
+
+        </script>
+    </body>
+</html>

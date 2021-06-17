@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+    <i onclick="changetype()" id="like" class="fa fa-thumbs-up" style="font-size:48px;color:grey"> <span id="l"></span>
+     <script>
+         var likes=0;
+         function changetype(){
+             var fb=document.getElementById("like");
+             var l=document.getElementById("l");
+            if(fb.style.color=="grey"){
+                fb.style.color="blue";
+                likes++;
+                l.innerHTML=likes + "like this";
+                }
+                else
+                {
+                    fb.style.color="grey";
+                    likes--;
+                    l.innerHTML=likes + "like this";
+
+                }
+            }
+     </script>
+
+ </body>
+</html>

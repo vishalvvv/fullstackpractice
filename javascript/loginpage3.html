@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input type="text" id="p" placeholder="Enter password"> <br><br>
+            <input onkeyup="checkpwd()" type="text" id="cp" placeholder="confirm password"> <span id="msg"></span>
+           
+        </form>
+
+        <script>
+            function checkpwd(){
+                event.preventDefault();
+                var cp=document.getElementById("cp").value;
+                var p=document.getElementById("p").value;
+                var msg=document.getElementById("msg");
+
+               if(cp == p){
+                   msg.innerHTML="matched";
+                   msg.style.color="green";
+
+               }
+               else
+               {
+                   msg.innerHTML="not matched";
+                   msg.style.color="red";
+               }
+            }
+        </script>
+
+    </body>
+</html>

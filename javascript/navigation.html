@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            body * {
+              margin: 10px;
+              border: 1px solid blue;
+            }
+          </style>
+          </head>
+           <body>
+
+            <form id="form">FORM
+                <div>DIV
+                    <p>P1</p>
+                    <p>P2</p>
+                </div>
+            </form>
+
+            <script>
+                var form=document.getElementById("form");
+                var firstchild = form.firstChild;
+                var div = firstchild.nextSibling;
+                var divContent = div.firstChild;
+                divContent.nextSibling.nextSibling.nextSibling.innerHTML="I am changed";
+               
+            </script>
+
+    </body>
+</html>

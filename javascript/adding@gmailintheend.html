@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        Email here:<input id="email" type="text" size="40">
+        <button onclick="emailSubmit()">Submit</button>
+
+      <script>
+ 
+          function emailSubmit(){
+              var email=document.getElementById("email").value;
+              console.log(email);
+              email=email.toLowerCase();
+              email=email.trim();
+              console.log(email);
+
+              if(email.includes('@')){
+                document.getElementById('email').value=email;
+                return;
+
+              }
+
+              if(!email.endsWith('@gmail.com')){
+                  email=email.concat('@gmail.com');
+                  document.getElementById('email').value=email;
+              }
+
+}
+         
+          </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <ul id="ul"></ul>
+        
+        <script>
+            var users=[
+                {
+                    name:"chirag",
+                    address:"hyderabad"
+                },
+                {
+                    name:"trishna",
+                    address:"hyderabad"
+                },
+                {
+                    name:"richa",
+                    address:"hyderabad"
+                }
+            ];
+            var ul=document.getElementById("ul");
+
+             for(var i=0;i<users.length;i++){
+                 var user=users[i];
+                ul.innerHTML+="<li>"+user.name+ "&nbsp"+ user.address+"</li>"
+             }
+        </script>
+    </body>
+</html>

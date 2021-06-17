@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        Email here:<input onkeyup="convert()" id="email" type="text" size="40">
+
+      <script>
+
+          function convert(){
+              var email=document.getElementById("email").value;
+              email =email.toUpperCase();
+              console.log(email);
+              document.getElementById('email').value=email;
+
+          }
+
+
+      </script>
+    </body>
+</html>

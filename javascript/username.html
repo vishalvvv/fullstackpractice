@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            Enter username: <input type="text" id="username" placeholder="enter username"> <span id="username_msg"></span>
+            
+            <button onclick="checkUsername()">Submit</button>
+        </form>
+        <script>
+            function checkUsername(){
+                event.preventDefault();
+                var usernames=["richa","chirag","trishna","ria"];
+                var username=document.getElementById("username").value;
+                var username_msg=document.getElementById("username_msg")
+                if(usernames.includes(username)){
+
+                 username_msg.style.color="red";
+                 username_msg.innerHTML="username already taken"
+                }
+                else
+                {
+                    username_msg.style.color="green";
+                 username_msg.innerHTML="username available"
+                }
+            }
+        </script>
+    </body>
+</html>

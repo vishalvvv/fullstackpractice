@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+<body id="body">
+    <script>
+        var body=document.getElementById('body');
+        var form=document.createElement('form');
+        console.log(form);
+        var username=document.createElement('input');
+        username.placeholder="enter username";
+        username.id="username";
+        var password=document.createElement('input');
+        password.placeholder="enter password";
+        password.id="password";
+        var login=document.createElement('button');
+        login.innerHTML="Login";
+        login.onclick=function(){
+            event.preventDefault();
+            if(username.value == "vishal" && password.value == "vishal"){
+                alert("login success");
+            }
+            else
+            {
+                alert("login failure");
+            }
+        }
+        var p = document.createElement('p');
+        p.innerHTML="Iam a paragraph!!!"
+        form.appendChild(username);
+        form.appendChild(password);
+        form.appendChild(login);
+        body.appendChild(form);
+        body.appendChild(p);
+    </script>
+
+</body>
+</html>

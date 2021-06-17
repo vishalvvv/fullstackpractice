@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            .red{
+                color: red;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <form>
+
+            Username : <input value="vishal" type="text" id="Username">
+
+            Password : <input type="password" name="password">
+
+            <h1 class="red">Hello</h1>
+            <h2 class="red">How are you</h2>
+
+            <p>This is a paragraph 1</p>
+            <p>This is a paragraph 2</p>
+            
+
+        </form>
+
+        <script>
+
+             //console.log(document.body);
+
+             console.log(document.getElementById("Username").id);
+
+             var pwd=document.getElementsByName("password");
+             console.log(pwd[0].type);
+
+             var classes=document.getElementsByClassName("red");
+             console.log(classes);
+             classes[0].style.color="green";
+
+             var paras=document.getElementsByTagName("p");
+             paras[0].style.color="orange";
+
+        </script>
+
+    </body>
+</html>

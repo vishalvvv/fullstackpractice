@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <a href ="javascript:displayData(); alert('done')">500+ connections</a>
+           <div id ="navbar">
+           </div>
+               
+    <script>
+        function displayData(){
+
+    
+        var data=[
+            {
+                name:"Rahul Srinivas Kolgur",
+                url:"https://www.linkedin.com/in/rahul-srinivas-kolgur-1312ba190/"
+            },
+            {
+                name:"Srishti Sharma",
+                url:"https://www.linkedin.com/in/srishti7337/"
+            },
+            {
+                name:"Deepak Sharma",
+                url:"https://www.linkedin.com/in/deepak-sharma-387074172/"
+            },
+            {
+                name:"Rahul Anumala",
+                url:"https://www.linkedin.com/in/rahul-anumala-63094b130/"
+            }
+
+        ];
+        var navbar=document.getElementById("navbar");
+         for(var i=0;i<data.length;i++){
+             var user=data[i];
+            navbar.innerHTML+=user.name.link(user.url)+ "<br><br>";
+         }
+        }
+
+    </script>
+    </body>
+</html>
