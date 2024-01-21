@@ -1,0 +1,15 @@
+router level middleware:
+
+the middleware that gets applied to specific routers is known as 
+router level middleware.
+
+
+Create an app with two middlewares, 
+
+1. app level middleware 
+2. router level middleware 
+3. error handling
+
+
+
+

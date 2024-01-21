@@ -1,0 +1,12 @@
+Node.js is a server side javascript runtime environment to run 
+javascript applications on the server side.
+
+Node.js is a single thread, event loop, non blocking i/o runtime 
+environment to run javascript code on server side.
+
+Node.js was implemented by ryan dahl when he was working on a 
+java project.
+
+Node.js has got few security issues (minor) and resolved in a 
+new environment called DENO.
+

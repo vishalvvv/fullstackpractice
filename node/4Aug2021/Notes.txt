@@ -1,0 +1,23 @@
+REPL: Read Evaluate Print and Loop
+
+To use REPL, we need to invoke node command.
+
+
+Callbacks:
+
+A callback is a function that gets called back when an async operation is performed.
+
+
+var fs = require('fs');
+
+fs.readFile('package.json',function(error,data){
+     if(error){
+         console.log(err);
+     }
+
+     if(data){
+         console.log(data.toString());
+     }
+})
+
+console.log("I am done");

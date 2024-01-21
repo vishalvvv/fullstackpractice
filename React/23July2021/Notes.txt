@@ -1,0 +1,24 @@
+Redux:
+
+
+Entities of Redux,
+
+1. Store   - Redux  -maintains Application state
+
+2. Application State  - Redux - is a collection of reducers forming an object.
+
+3. Reducer  - Redux - function that generate application state
+
+4. Action  - Redux -  function that contains the data access logic.
+
+5. Container  - Redux - Component that interacts with redux (action)
+
+6. Components  - React  -  Displaying UIs
+
+
+
+Component ->  Container -> action -> reducer -> application state -> store 
+
+
+
+

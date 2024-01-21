@@ -1,0 +1,22 @@
+var express = require('express');
+
+var app = express();
+
+app.use(express.json());
+
+var userRoute = require('./routes/users');
+
+app.use(userRoute);
+
+app.get('/healthcheck', function(req,res){
+      console.log(x);
+      res.send("its working!!");
+})
+
+app.use(function(error,req,res,next){
+    res.send("Something went wrong! please try later");
+})
+
+app.listen(9011, () => {
+    console.log("server started!");
+})

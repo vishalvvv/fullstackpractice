@@ -1,0 +1,15 @@
+Higher Ordered Components:
+
+  input 1 id=u, input 2 id=p, input 3  id=e
+
+
+ function getValue(id){
+     return document.getElementById(id).value;
+ }
+
+
+ Comp1  apicall(users)     Comp2   apicall(products)      Comp3 apicall(orders)
+
+
+
+ HOC Component -> resuable + additional functionality provded component -> comp1, comp2, comp3 

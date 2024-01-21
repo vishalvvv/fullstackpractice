@@ -1,0 +1,14 @@
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "this is my first app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vishal",
+  "license": "ISC",
+  "dependencies": {
+    "email-validator": "^2.0.4"
+  }
+}

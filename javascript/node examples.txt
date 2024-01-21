@@ -1,0 +1,66 @@
+var express = require('express')
+
+var app = express()
+
+app.use(express.json())
+
+var products = [
+  {
+    id: 1,
+    productName: 'Samsung',
+    price: 20000,
+  },
+  {
+    id: 2,
+    productName: 'Nokia',
+    price: 2000,
+  },
+]
+
+app.get('/products', (req, res) => {
+  res.send(products)
+})
+
+app.post('/products', (req, res) => {
+  var product = {
+    id: products.length + 1,
+    productName: req.body.productName,
+    price: req.body.price,
+  }
+  products.push(product)
+  res.send(products)
+})
+app.listen('6000', () => {
+  console.log('Port is up and running on 6000')
+})
+
+
+
+
+
+
+
+From Sai Kumar to Everyone:  07:48 AM
+//http://localhost:9012/user/ravi
+   app.delete("/user/:name",function(req,res){
+      var name =  req.params.name;
+      console.log(name);
+        users.forEach( function(user,i){
+               if(user.name == name){
+                    users.splice(i,1);
+               }
+        })
+        res.send(users);
+   })
+
+   //http://localhost:9012/user/ravi
+   app.put("/user/:name",function(req,res){
+    var name =  req.params.name;
+    console.log(name);
+      users.forEach( function(user,i){
+             if(user.name == name){
+                  users.splice(i,1);
+             }
+      })
+      res.send(users);
+ })

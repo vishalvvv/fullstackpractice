@@ -1,0 +1,13 @@
+Event Driven Programming:
+
+Node.js implemented event driven programming in its architecture.
+
+because of event loop,we are able to serve concurrent users.
+
+Node provides events modules to work with events.
+
+The realtime examples where event driven programming is implemented are,
+
+1. chatbots 
+2. realtime information apps such as facebook, gmail etc 
+3. chat applications

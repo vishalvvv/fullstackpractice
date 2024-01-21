@@ -1,0 +1,1 @@
+// component that contains react-redux 

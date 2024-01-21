@@ -1,0 +1,1 @@
+//function that accepts action and make a part of application state

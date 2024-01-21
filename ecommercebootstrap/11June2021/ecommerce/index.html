@@ -1,0 +1,151 @@
+<html>
+
+<head>
+
+
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist 3/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="../bootstrap-4.5.3-dist 3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 40%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+        <form  class="form-inline" action="/action_page.php">
+            <input size="30" class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                    <span class="glyphicon glyphicon-shopping-cart"></span><a class="nav-link" href="#">Cart</a>
+            </li>
+            <li class="nav-item">
+                    <span class="glyphicon glyphicon-cog"></span><a class="nav-link" href="#">Profile</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a target="_blank" href="mobiles.html"><img  src="https://technologyandtricks.com/wp-content/uploads/2020/07/Download-OnePlus-Nord-Wallpapers-Right-Here.jpg" alt="Los Angeles" width="1100" height="500"></a>
+                  
+              </div>
+              <div class="carousel-item">
+                    <a target="_blank" href="grocery.html"><img src="https://i.pinimg.com/originals/14/c3/c5/14c3c5c519398e5c7f897d4ef082a8e1.jpg" alt="Chicago" width="1100" height="500"></a>
+                 
+              </div>
+              <div class="carousel-item">
+                    <a target="_blank" href="electronics.html"><img src="https://media.istockphoto.com/photos/laundry-room-with-a-washing-machine-picture-id1134696879?k=6&m=1134696879&s=612x612&w=0&h=XicuQ4eM3v7Z-MHWeU8NLsucvvfM9VoHVt_qsNxwdmg=" alt="New York" width="1100" height="500"></a>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+          <br>
+
+           <hr>
+            <h1 style="text-align: center">Featured products</h1>
+           <br>
+
+          <div class="row">
+            <div class="col-md-4">
+                <figure class="card card-product">
+                    <div class="img-wrap"><img src="https://rukminim1.flixcart.com/image/612/612/jdj4k280/bottle/j/k/y/700-max-gym-bottle-gpo70420172g-jaypee-plus-original-imaf2f6fpugpjqqz.jpeg?q=70"></div>
+                    <figcaption class="info-wrap">
+                            <h4 class="title">Product 1</h4>
+                            <p class="desc">Some small description goes here</p>
+                            <div class="rating-wrap">
+                                <div class="label-rating">132 reviews</div>
+                                <div class="label-rating">154 orders </div>
+                            </div> <!-- rating-wrap.// -->
+                    </figcaption>
+                    <div class="bottom-wrap">
+                        <a href="" class="btn btn-sm btn-primary float-right"> Add to Cart</a> <a href="" class="btn btn-sm btn-primary float-right">Order Now</a>	
+                        <div class="price-wrap h5">
+                            <span class="price-new">$1280</span> <del class="price-old">$1980</del>
+                        </div> <!-- price-wrap.// -->
+                    </div> <!-- bottom-wrap.// -->
+                </figure>
+            </div> <!-- col // -->
+            <div class="col-md-4">
+                <figure class="card card-product">
+                    <div class="img-wrap"><img src="https://rukminim1.flixcart.com/image/612/612/knan98w0/bottle/v/e/l/cyclone-shakers-combo-set-of-2-shaker-black-grey-combo-haans-original-imag2y9hwfyjq9nu.jpeg?q=70"> </div>
+                    <figcaption class="info-wrap">
+                            <h4 class="title">Product 2</h4>
+                            <p class="desc">Some small description goes here</p>
+                            <div class="rating-wrap">
+                                <div class="label-rating">132 reviews</div>
+                                <div class="label-rating">154 orders </div>
+                            </div> <!-- rating-wrap.// -->
+                    </figcaption>
+                    <div class="bottom-wrap">
+                            <a href="" class="btn btn-sm btn-primary float-right">Order Now</a>	
+                            <div class="price-wrap h5">
+                                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
+                            </div> <!-- price-wrap.// -->
+                    </div> <!-- bottom-wrap.// -->
+                </figure>
+            </div> <!-- col // -->
+            <div class="col-md-4">
+                <figure class="card card-product">
+                    <div class="img-wrap"><img src="https://rukminim1.flixcart.com/image/612/612/klqx30w0/bottle/u/i/o/500-fuel-gym-1-sm-fuel-blue-haans-original-imaezrgmkyedtvwc.jpeg?q=70"></div>
+                    <figcaption class="info-wrap">
+                            <h4 class="title">Product 3</h4>
+                            <p class="desc">Some small description goes here</p>
+                            <div class="rating-wrap">
+                                <div class="label-rating">132 reviews</div>
+                                <div class="label-rating">154 orders </div>
+                            </div> <!-- rating-wrap.// -->
+                    </figcaption>
+                    <div class="bottom-wrap">
+                            <a href="" class="btn btn-sm btn-primary float-right">Order Now</a>	
+                            <div class="price-wrap h5">
+                                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
+                            </div> <!-- price-wrap.// -->
+                    </div> <!-- bottom-wrap.// -->
+                </figure>
+            </div> <!-- col // -->
+            </div>
+            
+
+
+</body>
+
+</html>
